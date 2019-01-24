@@ -39,5 +39,5 @@ def game():
         computerScore = computerScore + 1
         print("Computer Wins!\n" , "Your score:", userScore, "Computer Score:", computerScore)
 
-while playGame == True:
+while playGame:
     game()

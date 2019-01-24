@@ -2,12 +2,12 @@ import  random
 
 playAgain = True
 
-def RandomDice():
+def random_dice():
     x = random.randint(1,6)
     return x
 
-while playAgain == True:
-    y = RandomDice()
+while playAgain:
+    y = random_dice()
     print("You rolled:", y)
-    if(input("Would you like to roll again!?") == "no"):
+    if input("Would you like to roll again!?") == "no":
         break
