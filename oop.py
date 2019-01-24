@@ -1,10 +1,12 @@
 class Employee:
     raise_amount = 1.04
+    num_of_employees = 0
     def __init__(self, first, last, pay):
         self.first = first
         self.last = last
         self.pay = pay
         self.email = first + "." + last + "@company.com"
+        Employee.num_of_employees += 1
 
     def to_string(self):
         return self.first,self.last,self.email,self.pay
@@ -21,3 +23,4 @@ print(emp1.to_string())
 emp1.set_first("Mark")
 emp1.apply_raise()
 print(emp1.to_string())
+print(Employee.num_of_employees)
